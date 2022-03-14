@@ -26,10 +26,11 @@ int main(void)
 
     }
 
-    if(last == 0)
+    else if(last == 0)
     {
 
             printf("Last digit of %d is 0 and is 0\n", n);
+
 
     }
 
