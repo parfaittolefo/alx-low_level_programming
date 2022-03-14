@@ -7,16 +7,17 @@ int main(void)
 
 {
     long n;
-    /*
-        In main function, we gerarate a rendom number n
+    /**
+        *In main function, we gerarate a rendom number n
 
-        after that, we verify if it is negative, zero or positive
+        *after that, we verify if it is negative, zero or positive
 
+        *At end we return 0
 
     */
 
     srand(time(0));
-    n = rand();
+    n = rand() - RAND_MAX /2;
 
     if (n < 0)
     {
