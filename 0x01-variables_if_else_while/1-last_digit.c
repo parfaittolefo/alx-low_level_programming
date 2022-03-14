@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 
 /**
  * main - Determines either greater than 5, is less than 6, or is 0
@@ -11,35 +10,26 @@
 
 int main(void)
 {
-    int n, last;
+    int n, l;
 
     srand (time(0));
 
 	n = rand() - RAND_MAX / 2;
 
-	last = n % 10;
+	l = n % 10;
 
-    if (last > 5)
-    {
-
-            printf ("Last digit of %d is %d and is greater than 5\n", n,last);
-
-    }
-
-    else if (last == 0)
-    {
-
-            printf ("Last digit of %d is 0 and is 0\n", n);
-
-
-    }
-
-    else
-    {
-
-            printf ("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
-
-    }
+    if (l > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, l);
+	}
+	else if (l == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, l);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
+	}
 
     return (0);
 
