@@ -6,7 +6,7 @@
 int main(void)
 
 {
-    int n;
+    long n;
     /*
         In main function, we gerarate a rendom number n
 
