@@ -2,35 +2,36 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+        *In main function, we gerarate a rendom number n
+
+        *
+
+        *after that, we verify if it is negative, zero or positive
+
+    */
 
 int main(void)
 
 {
-    long n;
-    /**
-        *In main function, we gerarate a rendom number n
+    int n;
 
-        *after that, we verify if it is negative, zero or positive
-
-        *At end we return 0
-
-    */
 
     srand(time(0));
     n = rand() - RAND_MAX /2;
 
     if (n < 0)
     {
-        printf("%ld is negative",n);
+        printf("%d is negative\n",n);
     }
 
     else if(n>0)
     {
-        printf("%ld is positive",n);
+        printf("%d is positive\n",n);
     }
 
     else
-        printf("%ld is zero",n);
+        printf("%d is zero\n",n);
 
     return(0);
 }
